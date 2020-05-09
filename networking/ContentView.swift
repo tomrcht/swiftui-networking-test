@@ -7,10 +7,30 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @State private var task: AnyCancellable?
+
     var body: some View {
-        Text("Hello, World!")
+        Button(action: self.getUser) {
+            Text("Get tomrcht")
+        }
+    }
+
+    // MARK: - API methods
+    private func getUser() -> Void {
+        task = GithubApi.tomrcht()
+            .sink(receiveCompletion: { finished in
+                switch finished {
+                case .failure(let error):
+                    print(error.localizedDescription)
+                case .finished:
+                    print("call finished without errors")
+                }
+            }) { result in
+                print(result)
+            }
     }
 }
 

@@ -13,6 +13,9 @@
 		E2DBA5702434B2C1006EBEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DBA56F2434B2C1006EBEAD /* Assets.xcassets */; };
 		E2DBA5732434B2C1006EBEAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DBA5722434B2C1006EBEAD /* Preview Assets.xcassets */; };
 		E2DBA5762434B2C1006EBEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DBA5742434B2C1006EBEAD /* LaunchScreen.storyboard */; };
+		E2DBA5802434B302006EBEAD /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBA57F2434B302006EBEAD /* GithubUser.swift */; };
+		E2DBA5822434BD9D006EBEAD /* GithubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBA5812434BD9D006EBEAD /* GithubApi.swift */; };
+		E2DBA5842434BDF6006EBEAD /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DBA5832434BDF6006EBEAD /* Agent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E2DBA5722434B2C1006EBEAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2DBA5752434B2C1006EBEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2DBA5772434B2C1006EBEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DBA57F2434B302006EBEAD /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		E2DBA5812434BD9D006EBEAD /* GithubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
+		E2DBA5832434BDF6006EBEAD /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		E2DBA5682434B2C0006EBEAD /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				E2DBA57E2434B2D0006EBEAD /* Shared */,
+				E2DBA57D2434B2C9006EBEAD /* Models */,
 				E2DBA5692434B2C0006EBEAD /* AppDelegate.swift */,
 				E2DBA56B2434B2C0006EBEAD /* SceneDelegate.swift */,
 				E2DBA56D2434B2C0006EBEAD /* ContentView.swift */,
@@ -73,6 +81,23 @@
 				E2DBA5722434B2C1006EBEAD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2DBA57D2434B2C9006EBEAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2DBA57F2434B302006EBEAD /* GithubUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2DBA57E2434B2D0006EBEAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E2DBA5812434BD9D006EBEAD /* GithubApi.swift */,
+				E2DBA5832434BDF6006EBEAD /* Agent.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DBA56A2434B2C0006EBEAD /* AppDelegate.swift in Sources */,
+				E2DBA5822434BD9D006EBEAD /* GithubApi.swift in Sources */,
+				E2DBA5802434B302006EBEAD /* GithubUser.swift in Sources */,
+				E2DBA5842434BDF6006EBEAD /* Agent.swift in Sources */,
 				E2DBA56C2434B2C0006EBEAD /* SceneDelegate.swift in Sources */,
 				E2DBA56E2434B2C0006EBEAD /* ContentView.swift in Sources */,
 			);
